@@ -1,0 +1,426 @@
+/* PriyankaDeshmukh 822066226 Project 4 */
+body {
+  padding-top: 60px;
+}
+
+#productPage,#contactPage,#aboutUsPage,#cartPage{
+  display: none;
+}
+
+
+.headdiv{
+  position: relative;
+
+
+}
+.headdiv img{
+  background-color: #ddd;
+}
+.catMinus,.checkboxForCategory{
+  display: none;
+}
+
+.catMinus,.catPlus{
+  font-size: 17px;
+  font-weight: normal;
+}
+.cartProduct{
+  margin-left:  116px;
+  margin-right: 47px;
+}
+.catMinus:hover,.catPlus:hover,#content a,.fa:hover{
+  cursor: pointer;
+}
+.cartProduct .headdiv{
+  margin-right: -77px;
+}
+.checkboxForCategory input{
+  margin-right: 9px;
+}
+#productPage .bodydiv, .RandomProducts .bodydiv{
+  border:1px solid #ddd;
+  padding: 15px;
+
+    border-bottom-left-radius:4px;
+    border-bottom-right-radius: 4px;
+
+}
+.cartButton{
+
+  border:1px solid #ddd;
+  border-radius: 4px;
+  padding: 6px 12px;
+}
+.fa-shopping-cart{
+  color: grey;
+  padding-top: 5px;
+
+}
+ul li .fa-shopping-cart{
+  color: white;
+  padding: 9px;
+  font-size: 32px;
+
+}
+#content img{
+  width: 100%;
+  height: auto;
+
+}
+.needpadding{
+  padding-top:15px;
+
+}
+
+#cartPage .needpadding{
+  border-top: 1px solid #ddd;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.cartProduct{
+  border: 1px solid #ddd;
+  border-radius: 14px;
+}
+.needpadding .title{
+  background-color: #3F1F09;
+
+
+
+
+}
+.fa-dollar{
+  color: red;
+}
+#content h5{
+
+  font-size: 19px;
+  height: 60px;
+  margin-bottom: -10px;
+  color: white;
+
+}
+
+
+.shortDesc{
+  height: 45px;
+}
+
+.longDesc p {
+    height: 153px;
+    color: grey;
+    font-size: 12px;
+}
+/*#content h1{
+padding-top: 20px;
+padding-bottom:20px;
+
+
+}*/
+
+.bottom-left {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+#cartPage .bottom-left {
+
+  left: 16px;
+
+}
+
+.filter{
+  width: 24%;
+}
+.filter h4{
+  padding-right: 38px;
+}
+
+.checkboxForCategory div{
+  margin-bottom: 16px;
+}
+.cart-bubbleqty{
+  background: rgb(242,85,41) none repeat scroll 0 0;
+  border: medium none !important;
+  border-radius: 16px;
+  color: rgb(255, 255, 255) !important;
+  display: inline-block;
+  font-size: 10px !important;
+  left: -11px;
+  position: relative;
+  text-align: center;
+  top: -13px;
+  width: auto;
+  padding-right:1px;
+  min-width:16px;
+  padding-bottom:1px;
+  padding-left:1px;
+  vertical-align:middle;
+  padding-top:1px;
+}
+.navbar li{
+  font-weight: bold;
+}
+.navbar a{
+  color: white !important;
+}
+.navbar ul li:hover{
+  background-color: #000000;
+}
+.navbar{
+  background:#3F1F09
+}
+.navbar-right{
+  margin-right: 7px;
+}
+#content{
+  margin-bottom: 20px;
+}
+.summary{
+  display: none;
+  background-color: #f4f4f4;
+  width: 32%;
+  border-radius: 16px;
+}
+.summary i:hover{
+  cursor: default;
+
+}
+.summary i,.summary span{
+  cursor: default;
+  color: black;
+}
+.totalPayableParent{
+  border-top: 1px solid #ddd;
+  border-bottom:1px solid #ddd;
+}
+.paymentButton{
+
+  text-align: center;
+
+}
+.summary p{
+  font-size: 18px;
+}
+.paymentButton button{
+  padding: 15px;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom:  30px;
+
+
+}
+
+.modal-body label{
+
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+
+}
+.modal-body span{
+  color: red;
+}
+.invalidPhone,.validZip,.addNoSel,.card,.shipinvalidZip,.shipinvalidPhone{
+  display: none;
+}
+.required+span,.requiredDropDown+span{
+  display: none;
+}
+.shipping{
+  display: none;
+}
+label img{
+  width: 40px;
+  height: auto;
+}
+#homePage img{
+  max-height: 100%;
+  max-width: 100%;
+  width: 100%;
+  height:auto;
+}
+#home1 p:nth-child(2){
+  font-size: 60px;
+  position: absolute;
+  top: 10%;
+  left: 2%;
+  font-weight: 700;
+  color: #3F1F09;
+}
+#home1 p:nth-child(3){
+  font-size: 40px;
+  position: absolute;
+  top: 48%;
+  left: 2%;
+  font-weight: 700;
+  padding: 6px;
+  color: white;
+  border-radius: 12px;
+  background-color: #3F1F09;
+}
+#home2 p:nth-child(2){
+  font-size: 44px;
+      position: absolute;
+      top: 10%;
+      left: 4%;
+      font-weight: 700;
+      color: #DEB887;
+}
+#home2 p:nth-child(3){
+  font-size: 34px;
+  position: absolute;
+  top: 37%;
+  left: 4%;
+  font-weight: 700;
+  padding: 6px;
+  color: black;
+  border-radius: 12px;
+  background-color: 	#DEB887;
+}
+
+#home1,#home2{
+  position: relative;
+}
+@media all and (max-width: 965px) and (min-width: 600px) {
+  #homePage p{
+    font-size: 30px;
+  }
+}
+
+@media all and (max-width: 633px) and (min-width: 320px) {
+  #homePage p{
+    font-size: 20px;
+  }
+
+}
+
+#cartPage .emptycart{
+  display: none;
+
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.cartProduct h3{
+  text-align: center;
+
+
+  font-size: 35px;
+}
+.cartProduct,.summary{
+  margin-top: 40px;
+}
+.bodydiv input{
+  width: 34px;
+  margin-left: 20px;
+}
+.footer{
+  width: 100%;
+  text-align: center;
+}
+.footer p{
+  padding: 0px;
+  margin: 0px;
+  font-weight: bold;
+}
+.slidebar img {
+  width:40px;
+  height: auto;
+  display: inline;
+  margin: 2px;
+
+}
+
+.footer{
+
+
+  margin-top: 50px;
+  margin-bottom: 10px;
+
+}
+#cartPage .fa-dollar{
+  margin-right: 19px;
+      margin-top: 6px;
+}
+#cartPage .qty{
+  display: inline;
+
+    margin-right: -9px;
+    margin-left: 58px;
+}
+.allOurProducts:hover{
+  cursor: pointer;
+}
+.needpadding .title h5{
+  display: table-cell;
+vertical-align: middle;
+padding-left: 15px;
+font-size: 19px;
+height: 60px;
+margin-bottom: -10px;
+color: white;
+}
+#threeRandomProducts .col-md-9{
+      left: 13%;
+}
+.RandomProducts h1{
+  text-align: center;
+}
+.RandomProducts {
+  margin-bottom: 30px;
+    margin-top: 30px;
+}
+#homePage{
+margin-top: -11px;
+}
+.darkChocolates{
+  cursor: pointer;
+}
+#homeButton {
+  font-size: 45px;
+}
+#myNavbar{
+  font-size: 24px;
+}
+
+.navbar-default {
+     border-color: #3F1F09;
+}
+.title{
+  border-top-left-radius:4px;
+  border-top-right-radius: 4px;
+}
+.afterOrderconfirmation{
+  display: none;
+}
+/* .giftsSection img{
+  width: 50% !important;
+} */
+.giftsSection h1,.giftsSection h3{
+  text-align: center;
+}
+.title{
+  position: relative;
+}
+.fa-heart{
+  position: absolute;
+    right: 4%;
+    top: 27%;
+    font-size: 23px;
+}
+.red{
+  color: red;
+}
+#aboutUsPage{
+  margin-left: 200px;
+  margin-right: 200px;
+}
+#aboutUsPage h1:first-child{
+text-align: center;
+}
+#contactPage p{
+  font-size: 22px;
+}

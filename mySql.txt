@@ -1,0 +1,17 @@
+use jadrn013;
+
+drop table if exists order;
+
+create table orderDetails(sku varchar(20) NOT NULL,orderDate varchar(10) NOT NULL,quantity varchar(10) NOT NULL );
+
+SELECT order.sku, SUM(order.quantity) , 
+SUM(order.quantity*product.retail-order.quantity*product.cost)
+FROM proj4.products as product
+INNER JOIN jadrn013.orderDetails as order
+WHERE product.sku=order.sku
+GROUP BY order.sku
+ORDER BY  order.sku asc;
+
+
+
+select o.sku, TRIM(p.title) as Title, SUM(o.quantity) as Total_Quantity, ROUND((SUM(o.quantity) * p.retail) - (SUM(o.quantity)*p.cost),2) as Profit from orderchocolate o inner join proj4.products p where o.sku=p.sku group by o.sku;

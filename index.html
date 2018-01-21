@@ -1,0 +1,567 @@
+<!--
+PriyankaDeshmukh
+822066226
+Project 4
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bertha's Deluxe Chocolates.</title>
+  <link rel="stylesheet"  href="fonts/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="myCss.css">
+  <script type="text/javascript" src="js/fetchProducts.js"></script>
+  <script type="text/javascript" src="js/singlePage.js"></script>
+  <script type="text/javascript" src="js/shopping_cart.js"></script>
+  <script type="text/javascript" src="js/cartFunctions.js"></script>
+  <script type="text/javascript" src="js/validation.js"></script>
+  <script type="text/javascript" src="js/theme.js"></script>
+  <!-- <script src="myJs.js"></script> -->
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" id="homeButton" href="#">Bertha's Deluxe Chocolates</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li ><i class="fa fa-shopping-cart fa-3x fa-inverse cart" aria-hidden="true">
+        <span class="cart-bubbleqty minicart">10</span>
+      </i></li>
+    </ul>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li id="productButton"><a href="#">Products</a></li>
+        <!-- <li><a href="#">Order Online</a> </li> -->
+        <!-- instead of order online I have used cart for the same functionality -->
+        <li id="aboutUsButton"><a href="#">About Us</a></li>
+        <li id="contactButton"><a href="#">Contact</a> </li>
+      </ul>
+    </div>
+
+  </nav>
+  <div class="container-fluid">
+    <div id="homePage">
+
+      <!-- <img src="images/homePageCocoa.jpg" alt=""> -->
+      <div id='home1'>
+        <img src="images/home1.jpg"  alt="">
+        <p>We’re passionate about chocolate. </br>And making the world </br>a better place.
+        </p><p class='allOurProducts'>
+          View all our Products
+        </p>
+      </div>
+      <div class="RandomProducts">
+        <h1>Hot Selling Chocolates Today!!!</h1>
+        <div id="threeRandomProducts">
+          <div class="row">
+            <div class="col-md-9 ">
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id='home2'>
+        <img src="images/home2.jpg"  alt="">
+        <p>For true chocolate connoisseurs, </br> Bertha's dark chocolate delivers that </br>deeply satisfying experience.
+        </p><p class='darkChocolates'>
+          Dark Chocolates
+        </p>
+      </div>
+<!--
+      <div class="christmasProducts">
+        <h1>Christmas Special!!!</h1>
+        <div id="christmasProducts3Special">
+          <div class="row">
+            <div class="col-md-9 ">
+
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+
+      <!-- <img src="images/home3.jpg" alt=""> -->
+      <!-- <img src="images/home4.jpg" alt=""> -->
+      <!-- <img src="images/home5.jpg" alt=""> -->
+
+      <div class="giftsSection">
+        <div class="row">
+<div class="col-md-6">
+      <img src="images/home6.jpg" alt="">
+</div>
+<div class="col-md-6">
+
+      <h1>GIFTS FOR EVERY OCCASION</h1>
+        <h3>  Birthday Gifts</h3>
+        <h3>Wedding Gifts</h3>
+        <h3>Anniversary Gifts</h3>
+        <h3>Monthly Chocolate Gifts</h3>
+        <h3>Entertaining Gifts</h3>
+
+</div>
+        </div>
+
+      </div>
+    </div>
+    <div id="productPage">
+      <div class="row">
+        <div class="col-md-3 col-xs-12 filter">
+          <h1>Browse By</h1>
+          <h4>Category     <span><i class="fa fa-plus pull-right catPlus"></i>
+            <i class="fa fa-minus pull-right catMinus"></i></span>  </h4>
+            <div class="checkboxForCategory">
+              <div><input  type="radio" name="category" id="milk" value="Milk Chocolate"> Milk Chocolate
+              </div>
+
+              <div><input  type="radio" name="category" id="dark" value="Dark Chocolate"> Dark Chocolate
+
+              </div>
+              <div><input  type="radio" name="category" id="nuts" value="Nuts and Chews"> Nuts and Chews
+              </div>
+              <div><input  type="radio" name="category" id="brittle" value="Brittles and Toffies"> Brittles and Toffies
+              </div>
+              <div><input  type="radio" name="category" id="truffles" value="Truffles"> Truffles
+              </div>
+              <div><input  type="radio" name="category" id="gifts" value="Gifts"> Gifts
+              </div>
+              <div><input  type="radio" name="category" id="holidayAssortments" value="Holiday assortments"> Holiday assortments
+              </div>
+            </div>
+
+
+          </div>
+          <div class="col-md-9 col-xs-12 ">
+            <div id="content">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="contactPage">
+        <div class="row">
+<div class="col-md-4">
+  <img src="images/spoons.png" alt="">
+</div>
+<div class="col-md-8">
+  <h1>Address: </h1> <p>5250 Campanile Dr, San Diego, CA 92182</p>
+      <h1>Phone: </h1> <p>(619) 594-5200</p>
+        <h1>Email: </h1> <p>pd121193@gmail.com</p>
+</div>
+        </div>
+
+
+
+
+      </div>
+      <div id="aboutUsPage">
+        <h1>About Us</h1>
+        <div>
+                <p></p><h1>Bertha's Chocolate – The Home Of Premium Professional Chocolate</h1>
+    <p>Since 1992 we've been the trusted source for happy people just like you: the chocolate lover, the chocolate maker, chef and baker. Take your creative inspirations to the level of excellence. Our success is built upon quality and value. And your happiness is the measure of our success. Try our bulk dark chocolates and see why we have secretly been gaining customers world wide.</p>
+    <p>Chocolate lovers across the globe can now enjoy a one stop shop for the freshest and highest quality chocolate on the market. As a chocolate connoisseur the brand &nbsp;Bertha's Chocolate conjures up images of exceptional quality. A premium name that rolls around the tongue, bringing the finest quality of pure chocolate bliss to the taste buds.</p>
+    <h1>High End Chocolate at Affordable Prices&nbsp;</h1>
+    <p>With over 120 years of combined experience we are proud to bring the finest sourced chocolate to the online market. We have formed close relationships with our partners&nbsp;around the globe to make buying high end chocolate brands at wholesale prices easy and affordable. Always fresh</a>&nbsp;from the source, we have chocolates that you can count on day in and day out.</p>
+    <h1>Quality Delivered On Time and in Perfect Condition</h1>
+    <p>Here at Bertha's Chocolate we pride ourselves on sterling service when it comes to delivering pure quality professional chocolate and cocoa products. With representatives branching out in Amsterdam, Los Angeles, Honolulu and London, our partners are helping to supply every corner of the globe with first class chocolate. Our suppliers, one or more, are fully accredited with HACCP, UTZ, USDA Organic, NOP Organic, Fair Trade and Rainforest Alliance. Bertha's Chocolate has formed close partnerships with FedEx and UPS.</p>
+    <p>An Award Winning Combination</p>
+    <p>When it comes to choosing a chocolate supplier you can trust, Bertha's Chocolate has the edge. Not only are we offering superior chocolate sourced from luxury brand companies but we've added our expertise at distribution: efficient delivery and competitive pricing makes for an award winning combination.</p>
+    <p>Chocolate to Ignite the Senses</p>
+    <p>One look at our product list will leave you in a dream as all your senses spark to life. Our range of chocolate is so diverse that even the fussiest taste buds will be charmed. Whether you are looking for rich, dark European chocolate classics or Brazilian cocoa chunks, new wave California truffles or Italian hazelnut paste we can make all your chocolate dreams come true.</p>
+    <p>Exceed Your Expectations</p>
+    <p>For the first time, confectionary chefs, chocolate box lovers, connoisseurs and dessert specialists can get excited about wholesale bulk chocolate online. Premium chocolate ingredients are waiting for you at the simple click of a button. You can enjoy the very best from some of the biggest and boldest names in the chocolate world and you can rest assured that your chocolate is in the very best hands. With first class distribution and transit policies, customer service that exceeds your expectations and competitive prices that will ignite your imagination, pure chocolate and fresh ingredients have never been so accessible.&nbsp;</p>
+    <!-- content from https://www.santabarbarachocolate.com/about-us/ -->
+        </div>
+      </div>
+      <div id="cartPage">
+        <div class="row">
+          <div class="col-md-6 cartProduct">
+
+          </div>
+          <img src="images/emptycart.png" class="emptycart" alt="">
+          <div class="col-md-6 summary">
+            <h3>Order Summary</h3>
+            <div class="">
+              <p>Cart Total <i class='fa fa-dollar  pull-right'><span class="cartTotal"></span></i> </p>
+
+
+            </div>
+            <div class="">
+
+              <p>Shipping Charge <i class='fa fa-dollar  pull-right'><span class="shippingCharge">2</span></i> </p>
+            </div>
+            <div class="">
+              <p>Total Tax (8%) <i class='fa fa-dollar pull-right'><span class="tax"></span></i></p>
+            </div>
+
+            <div class="totalPayableParent">
+              <h3>Payable Amount <i class='fa fa-dollar pull-right'><span class="totalPayable"></span></i> </h3>
+            </div>
+            <div class="paymentButton  ">
+              <button type="button" name="button" class="getting-started btn btn-primary col-md-12 " data-backdrop="static" data-keyboard="false" data-toggle="modal" data-target="#myModal">Proceed</button>
+            </div>
+          <div class="afterOrderconfirmation">
+            <div class="cardused">
+              <h3>Card Used:<span></span></h3>
+
+            </div>
+            <div class="address">
+              <h3>Your order will be shipped to:</h3>
+              <p></p>
+            </div>
+
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer ">
+      <div class="  slidebar ">
+        <img src="images/insta.png" alt="">
+        <img src="images/fb.png" alt="">
+        <img src="images/g+.png" alt="">
+        <img src="images/twitter.png" alt="">
+      </div>
+      <p>© Copyright 2017 PriyankaDeshmukh Inc.</p>
+      <p>All rights reserved.</p>
+    </div>
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" id="closeMyModal" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Payment Gateway</h4>
+          </div>
+          <div class="modal-body">
+
+            <form name="personal_info" id="paymentGateway" >
+              <!-- ROW 1 with first middle last name 4 each-->
+              <div class="row ">
+                <div class="form-group col-md-6">
+                  <label for="fname">First Name<span>*</span></label>
+                  <input class="form-control required" type="text" name="fname"  id="fname" size="25" />
+                  <span>Please Enter Your First Name</span>
+                </div>
+
+                <div class="form-group col-md-6">
+                  <label for="lname">Last Name<span>*</span></label>
+                  <input class="form-control required" type="text" name="lname"  id="lname" size="25" />
+                  <span>Please Enter Your Last Name</span>
+                </div>
+
+              </div>
+              <!--Row2 with address and 12 length  -->
+              <div class="row">
+                <div class="col-md-6 form-group">
+
+
+
+                  <label for="address1">Address Line 1<span>*</span></label>
+                  <input class="form-control required" type="text" name="address1"  id="address1" size="55" />
+                  <span>Please Enter Address</span>
+
+
+
+                </div>
+
+                <div class="col-md-6 form-group">
+
+
+                  <label for="address2">Address Line 2</label>
+                  <input class="form-control" type="text" name="address2"  id="address2" size="55" />
+
+
+
+                </div>
+
+              </div>
+
+              <div class="row ">
+                <div class="form-group col-md-6">
+                  <label for="city">City<span>*</span></label>
+                  <input class="form-control required" type="text" name="city"  id="city"  />
+                  <span>Please Enter Your City</span>
+
+
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="state">State<span>*</span></label>
+                  <select class="form-control requiredDropDown" name="state" id="state"  data-live-search="true" >
+                    <option value="">Select State</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District Of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                  </select>
+                  <span>Please Select State</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="zip">Zip<span>*</span></label>
+                  <input class="form-control required" type="text" name="zip" id="zip" maxlength="5" />
+                  <span>Please Enter Zip Code</span>
+                  <span class="validZip">Please Enter Valid Code</span>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="phone">Phone<span>*</span></label>
+                  <input class="form-control  required" type="text" name="area_phone" id="phone" minlength ="13" maxlength="13" placeholder="(###)###-####" />
+                  <span>Please Enter Your Phone Number</span>
+                  <span class="invalidPhone">Please Enter Phone Number in the format (###)###-####</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-12">
+                  <label> Is Shipping Address same as above<span>*</span></label>
+                  <label class="radio-inline">
+                    <input  type="radio" name="sameAdd" value="yes">Yes
+                  </label>
+                  <label class="radio-inline">
+                    <input  type="radio" name="sameAdd" value="no">No
+                  </label>
+                  <span class="addNoSel">Please select an option</span>
+                </div>
+
+
+              </div>
+
+              <div class="shipping">
+                <div class="row ">
+                  <div class="form-group col-md-6">
+                    <label for="fname">First Name<span>*</span></label>
+                    <input class="form-control required" type="text" name="fname"  id="shipfname" size="25" />
+                    <span>Please Enter Your First Name</span>
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="lname">Last Name<span>*</span></label>
+                    <input class="form-control required" type="text" name="lname"  id="shiplname" size="25" />
+                    <span>Please Enter Your Last Name</span>
+                  </div>
+
+                </div>
+                <!--Row2 with address and 12 length  -->
+                <div class="row">
+                  <div class="col-md-6 form-group">
+
+
+
+                    <label for="address1">Address Line 1<span>*</span></label>
+                    <input class="form-control required" type="text" name="address1"  id="shipaddress1" size="55" />
+                    <span>Please Enter Address</span>
+
+
+
+                  </div>
+
+                  <div class="col-md-6 form-group">
+
+
+                    <label for="address2">Address Line 2</label>
+                    <input class="form-control" type="text" name="address2"  id="shipaddress2" size="55" />
+
+
+
+                  </div>
+
+                </div>
+
+                <div class="row ">
+                  <div class="form-group col-md-6">
+                    <label for="city">City<span>*</span></label>
+                    <input class="form-control required" type="text" name="city"  id="shipcity"  />
+                    <span>Please Enter Your City</span>
+
+
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="state">State<span>*</span></label>
+                    <select class="form-control requiredDropDown" name="state" id="shipstate"  data-live-search="true" >
+                      <option value="">Select State</option>
+                      <option value="AL">Alabama</option>
+                      <option value="AK">Alaska</option>
+                      <option value="AZ">Arizona</option>
+                      <option value="AR">Arkansas</option>
+                      <option value="CA">California</option>
+                      <option value="CO">Colorado</option>
+                      <option value="CT">Connecticut</option>
+                      <option value="DE">Delaware</option>
+                      <option value="DC">District Of Columbia</option>
+                      <option value="FL">Florida</option>
+                      <option value="GA">Georgia</option>
+                      <option value="HI">Hawaii</option>
+                      <option value="ID">Idaho</option>
+                      <option value="IL">Illinois</option>
+                      <option value="IN">Indiana</option>
+                      <option value="IA">Iowa</option>
+                      <option value="KS">Kansas</option>
+                      <option value="KY">Kentucky</option>
+                      <option value="LA">Louisiana</option>
+                      <option value="ME">Maine</option>
+                      <option value="MD">Maryland</option>
+                      <option value="MA">Massachusetts</option>
+                      <option value="MI">Michigan</option>
+                      <option value="MN">Minnesota</option>
+                      <option value="MS">Mississippi</option>
+                      <option value="MO">Missouri</option>
+                      <option value="MT">Montana</option>
+                      <option value="NE">Nebraska</option>
+                      <option value="NV">Nevada</option>
+                      <option value="NH">New Hampshire</option>
+                      <option value="NJ">New Jersey</option>
+                      <option value="NM">New Mexico</option>
+                      <option value="NY">New York</option>
+                      <option value="NC">North Carolina</option>
+                      <option value="ND">North Dakota</option>
+                      <option value="OH">Ohio</option>
+                      <option value="OK">Oklahoma</option>
+                      <option value="OR">Oregon</option>
+                      <option value="PA">Pennsylvania</option>
+                      <option value="RI">Rhode Island</option>
+                      <option value="SC">South Carolina</option>
+                      <option value="SD">South Dakota</option>
+                      <option value="TN">Tennessee</option>
+                      <option value="TX">Texas</option>
+                      <option value="UT">Utah</option>
+                      <option value="VT">Vermont</option>
+                      <option value="VA">Virginia</option>
+                      <option value="WA">Washington</option>
+                      <option value="WV">West Virginia</option>
+                      <option value="WI">Wisconsin</option>
+                      <option value="WY">Wyoming</option>
+                    </select>
+                    <span>Please Select State</span>
+                  </div>
+
+                </div>
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <label for="zip">Zip<span>*</span></label>
+                    <input class="form-control required" type="text" name="zip" id="shipzip" maxlength="5" />
+                    <span>Please Enter Zip Code</span>
+                    <span class="shipinvalidZip">Please Enter Valid Code</span>
+
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="phone">Phone<span>*</span></label>
+                    <input class="form-control  required" type="text" name="area_phone" id="shipphone" minlength ="13" maxlength="13" placeholder="(###)###-####" />
+                    <span>Please Enter Your Phone Number</span>
+                    <span class="shipinvalidPhone">Please Enter Phone Number in the format (###)###-####</span>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="form-group col-md-12">
+                  <label>Card Type<span>*</span></label>
+                  <label class="radio-inline">
+                    <input  type="radio" name="card" value="Visa"><img src="images/visa.jpg" alt="Visa">
+                  </label>
+                  <label class="radio-inline">
+                    <input  type="radio" name="card" value="Mastercard"><img src="images/master.png" alt="Mastercard">
+                  </label>
+                  <label class="radio-inline">
+                    <input  type="radio" name="card" value="Discover"><img src="images/dis.jpg" alt="Discover">
+                  </label>
+                  <label class="radio-inline">
+                    <input  type="radio" name="card" value="American Express"><img src="images/am.jpeg" alt="American Express">
+                  </label>
+                  <div class="">
+                    <span class="card">Please select Card Type</span>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="form-group col-md-6"><label for="email">Card Number<span>*</span></label>
+                  <input class="form-control required" type="text" maxlength="16" name="cardNo" id="cardNo">
+                  <span >Please Enter Card Number</span>
+                  <span class="invalidCardNo" style="display: none;">Invalid Card Number</span>
+                </div>
+                <div class="form-group  col-md-6"><label for="dob">Expiration Date<span>*</span></label>
+                  <input class="form-control required" type="text" name="expDate" id="expDate" placeholder="MM/YY" maxlength="5">
+                  <span style="display: none;">Please Enter Expiration Date</span>
+                  <span class="invalidDate" style="display: none;">Invalid Expiration Date</span>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <input class="form-control btn btn-danger" type="reset" value="Clear Data" id="reset">
+                </div>
+                <div class="form-group col-md-6">
+                  <!-- <input class="form-control btn btn-success" type="submit" value="Submit Data"> -->
+                  <button  class="form-control btn btn-success"  name="Submit Data" id="submit" >Submit</button>
+                </div>
+              </div>
+              <!-- <input class="form-control btn btn-success" type="submit" value="Submit Data" id="submit" /> -->
+
+
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  </html>
